@@ -60,3 +60,4 @@
   let data = `hello good morning
    ${a*b}${b}`;
    console.log(data);
+   
