@@ -3,6 +3,7 @@
 // we use the async keybord with a function to represent that the function is an asychronous function. the async function return a promise.
 
 {
+<<<<<<< HEAD
     // async function fun_name(parameter1,parameter2,.....parameterN,){
      // statement
      //  }
@@ -123,3 +124,89 @@
  // error handling is simpler.
  // Debugging is easier.
  
+=======
+   // async function fun_name(parameter1,parameter2,.....parameterN,){
+    // statement
+    //  }
+  
+     // fun_name - name of the function 
+     // parameters - parameters that are passed to the function 
+}
+
+// async
+
+// the async keyword is used before the function to represent that the function is asynchronous.
+
+{
+    // async function example 
+
+//      async  function f() {
+//         console.log('async function called ');
+//         return Promise.resolve(1);
+//     }
+ 
+//    f();
+
+}
+
+// this funtion return a promise, you can use the chaining method then()
+
+{
+    //  async function f(){
+    //     console.log('async function.');
+    //     return Promise.resolve("good morning");
+    //     return Promise.reject("reject promise .");
+    // }
+
+    //    f().then(function(result){
+    //         console.log(result)
+    //     }).catch((err)=>console.log(err));
+    
+}
+
+// javacript await keybord
+
+// the await keybord is used inside the async function to await for the asynchronous operation.
+
+// the syntax to use await is
+
+{
+     // let result = await promise;
+}
+
+// the use of await pauses the async function untill the promise return a result (resolve or reject) value.
+
+{
+    //  a promise
+    //  let promise = new promise(function (resolve, reject){
+    //     detTimeout(function (){
+    //         resolve('promise resolveed')}, 4000);
+    //  })
+
+//     async function
+//     async function asyncFunc(){
+
+//         wait untill the promise resolves
+//         let result = await promise;
+
+//         console.log(result);
+//         console.log('hello');
+//    }
+
+//  calling the async function
+//  asyncFunc();
+}
+  
+// a promise object is created and it gets resolved after 4000 milliseconds. here, the asyncFunc() function is  writing using the async function.
+
+// the await keyword waits for the promise to be complete (resolve or reject).
+
+// hello is displayed only after promise value is available to the result variable.
+
+// in the above program, if there are multiple peomise in the program.
+
+[
+   // let promise = new promise ()
+
+]
+>>>>>>> 44c45a3b2d1de591fd489d74a5423462abe08953
