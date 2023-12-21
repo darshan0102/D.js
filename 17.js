@@ -61,3 +61,95 @@
 
     // a = 'hello'; // throws an error
 }
+
+// 2. underclared objects are not allowed
+
+{
+    // 'use strict';
+
+    // person = {name: 'carla',age : 25}; // throws an error
+}
+
+// 3. deleting an object is not allowed.
+
+{
+   // 'use strict';
+
+   // let person = {name: 'carla'};
+
+   // delete person; // throw an error
+   
+}
+
+// 4. Duplication a parameter name is not allowed.
+
+{
+    // "use stict";
+
+    // function hallo(p1, p1) {  console.log('hello')}; // throw an error
+
+    // hello();
+}
+
+// 5. assigning to a non-writable property is not allowed.
+
+{
+    // 'use stct';
+
+    // let obj1 = {};
+
+    // object.defineproperty(obj1,'x', {value: 42, writable: false});
+
+    // assignment to a non-writable property
+    // obj1.x = 9; // throws an error 
+}
+
+// 6. assigning to a getter-only property is not allowed.
+
+{
+      // 'use strict';
+      
+      // let obj2 = {get x() { return 17; } };
+      
+      // asignment to a getter -only property
+      // obj2.x = 5; // throw an error 
+}
+
+// 7. assigning to a new property on a non - exetensible object is not allowed.
+
+{
+    // 'use strict';
+
+    // let obj = {};
+    // object.preventExtensions(obj);
+    // assignment = 'new value'; // throw an error
+}
+
+// 8. octal syntax is not allowe.
+
+{
+    // 'use strict';
+
+    // let a = 010; // throws an error 
+}
+
+// 9. the variable name arguments and eval are not alowed.
+
+{
+     // 'use strict';
+
+     // let arguments = 'hello'; // throws an error
+ 
+     // let eval = 44;
+}
+
+// 10. you can not also use these reseved keywords in strict mode. 
+
+// implements interface let package private protected public static yield
+
+// Benefits of strict mode
+
+// the use of strict mode:
+
+// change previously accepted silent error (bad syntax) into real error and throws an error message
+// makes it easier to write "secure" javscript  
